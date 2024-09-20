@@ -21,5 +21,5 @@ class categories extends mongoose.model{
 
 }
 
-User.loadClass(categories);
+Schema.loadClass(categories);
 module.exports=mongoose.model("categories",Schema);

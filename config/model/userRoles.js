@@ -24,5 +24,5 @@ class user_roles extends mongoose.model{
 
 }
 
-User.loadClass(user_roles);
+Schema.loadClass(user_roles);
 module.exports=mongoose.model("user_roles",Schema);

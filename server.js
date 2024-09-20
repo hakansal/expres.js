@@ -1,14 +1,17 @@
-const express=require("express");
+const express = require("express");
 require("dotenv").config();
-const Connect=require("./config/db/Database");
-const router=require("./routes/deneme");
+const Connect = require("./config/db/Database");
+const audit = require("./routes/auditlog");
+const categori = require("./routes/categories");
 Connect();
-const app=express();
+
+const app = express();
 app.use(express.json());
 
- app.use("/routes",router);
- 
- 
-app.listen(3000,()=>{
+app.use("/categori", categori);
+app.use("/auditlog", audit);
+
+
+app.listen(3000, () => {
     console.log("server başladı");
 })

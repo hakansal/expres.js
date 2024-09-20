@@ -27,5 +27,5 @@ class rolepage extends mongoose.model{
 
 }
 
-User.loadClass(rolepage);
+Schema.loadClass(rolepage);
 module.exports=mongoose.model("rolepage",Schema);

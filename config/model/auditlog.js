@@ -22,5 +22,5 @@ class Audistlog extends mongoose.model{
 
 }
 
-User.loadClass(Audistlog);
+Schema.loadClass(Audistlog);
 module.exports=mongoose.model("Audistlog",Schema);
